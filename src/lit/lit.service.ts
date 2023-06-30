@@ -17,7 +17,7 @@ export class LitService {
       method: 'GET',
       headers: {
         'api-key': this.relayApiKey,
-        Origin: 'http://localhost',
+        Origin: 'https://lit-relay-helper.vercel.app',
       },
     });
     if (response.status < 200 || response.status >= 400) {
